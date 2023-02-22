@@ -1,0 +1,175 @@
+// @import url('../assets/fonts/Merriweather.css');
+
+:root {
+		--body-bg-color: #22212C;
+		--text-color: #837E9F;
+		--bg-cards: #302F3D;
+		--bg-techs: #CB92B1;
+}
+
+*{
+	margin: 0;
+}
+
+body{
+	background: var(--body-bg-color);
+	color:  var(--text-color);
+
+	font-family: 'Merriweather', serif;
+  overflow: hidden;
+}
+
+.container{
+	display: flex;
+	gap: 1rem;
+	// min-height: 80vh;
+}
+
+aside {
+  display: flex;
+  flex-basis: 25%;
+}
+
+app-aside{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 2rem;
+}
+
+main {
+  // display: flex;
+  flex: 1;
+}
+
+app-main{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 2rem;
+}
+
+footer {
+  margin-top: -15px;
+	height: 0.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card{
+	background: var(--bg-cards);
+	border-radius: 10px;
+	border: 1px solid var(--bg-cards);
+}
+
+.perfil{
+	height: 300px;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.perfil>div>img{
+	margin-top: 20px;
+	border-radius: 90px;
+	border: 2px solid #00ff00;
+}
+
+.contato{
+	width: 350px;
+  height: 350px;
+}
+
+.contato>ul{
+	margin-top: 10px;
+}
+
+.contato>ul>li{
+	list-style-type: none;
+	padding: 10px;
+}
+
+.contato>ul>li>a{
+	text-decoration:none;
+	color:  var(--text-color);
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.projetos{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+.projetos>h2{
+	padding: 20px;
+	text-align: center;
+}
+
+.projetos-item>ul{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin-bottom: 10px;
+}
+
+
+.projetos-item>ul>li{
+	list-style-type: none;
+	flex-direction: row;
+}
+
+.projetos-item>ul>li>a{
+	display: flex;
+	text-decoration:none;
+	color:  var(--text-color);
+	text-decoration: none;
+	align-items: center;
+	gap: 1rem;
+}
+
+
+.parceiros{
+  height: 350px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.parceiros>h2{
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 900px){
+	body{
+	    align-items: center;
+	    min-width: 350px;
+	}
+
+	.container{
+		display: block;
+		overflow-y: hidden;
+	}
+
+	.projetos{
+		width: 350px;
+	}
+
+	.projetos-item>ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.parceiros{
+		width: 350px;
+	}
+}
